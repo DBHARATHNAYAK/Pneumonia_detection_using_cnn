@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46164d3d79.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <nav>
+        <div class="container"> 
+            <ul>
+                <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="gallery.html">Gallery <i class="fas fa-images"></i></a></li>
+                <li><a href="about.html">About Us <i class="fas fa-info-circle"></i></a></li>
+                <li><a href="contact.html" class="active">Contact Us <i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>.</h1>
+        
+        <h1>Contact Us</h1>
+        <p>
+            We'd love to hear from you! 
+            Please feel free to contact us with any questions, feedback, or inquiries.
+        </p>
+
+        <form id="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="contact-message"></p> 
+
+    </div>
+    <div class="toggle-mode-container">
+        <button onclick="toggleMode()">
+            <i class="fas fa-lightbulb"></i> Toggle Light Mode
+        </button>
+    </div>
+
+</body>
+</html>

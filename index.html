@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46164d3d79.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <nav>
+        <div class="container"> 
+            <ul>
+                <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="gallery.html">Gallery <i class="fas fa-images"></i></a></li>
+                <li><a href="about.html">About Us <i class="fas fa-info-circle"></i></a></li>
+                <li><a href="contact.html">Contact Us <i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="">Pneumonia Detection using CNN</h1>
+            <p>Upload an image for classification:</p>
+            <input type="file" id="file-upload" onchange="handleFileUpload(event)">
+            <p id="predictionResult"></p>
+        </div>
+    </div>
+
+    <div class="toggle-mode-container">
+        <button onclick="toggleMode()">
+            <i class="fas fa-lightbulb"></i> Toggle Light Mode
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
